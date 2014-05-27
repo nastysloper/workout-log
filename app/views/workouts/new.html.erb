@@ -1,0 +1,14 @@
+<h1>new workout</h1>
+<%= form_for :workout, url: workouts_path do |f| %>
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
