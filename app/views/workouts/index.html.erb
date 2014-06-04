@@ -1,0 +1,14 @@
+<h1>Listing Workouts</h1>
+
+<table>
+  <tr>
+    <th>Workouts</th>
+  </th>
+
+  <% @workouts.each do | workout | %>
+    <tr>
+      <td><%= workout.text %></td>
+    </tr>
+  <% end %>
+</table>
+
