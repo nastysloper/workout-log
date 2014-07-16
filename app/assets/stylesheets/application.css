@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+h1, th, td {
+  font-family: helvetica;
+}
+
+a {
+  text-decoration: none;
+  font-family: helvetica;
+  display: inline-block;
+  padding: 5px 0 5px 0;
+}
+
+a:hover {
+  color: pink;
+}
+
+
