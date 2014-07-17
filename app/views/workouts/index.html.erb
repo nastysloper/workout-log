@@ -7,6 +7,7 @@
 
   <% @workouts.each do | workout | %>
     <tr>
+      <td><%= workout.date %></td>
       <td><%= workout.text %></td>
     </tr>
   <% end %>
