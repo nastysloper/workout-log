@@ -1,11 +1,10 @@
 # == Schema Information
 #
-# Table name: workouts
+# Table name: users
 #
 #  id         :integer          not null, primary key
-#  title      :string(255)
-#  date       :date
-#  text       :text
+#  name       :string(255)
+#  email      :string(255)
 #  created_at :datetime
 #  updated_at :datetime
 #
@@ -13,11 +12,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  date: 2014-05-26
-  text: MyText
+  name: MyString
+  email: MyString
 
 two:
-  title: MyString
-  date: 2014-05-26
-  text: MyText
+  name: MyString
+  email: MyString
