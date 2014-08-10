@@ -12,6 +12,7 @@
 class User < ActiveRecord::Base
   validates :name, presence: true
   validates :email, presence: true
+  has_many :workouts, dependent: :destroy
 
   def create(name, email)
     @user = User.new(name, email)
