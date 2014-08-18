@@ -5123,3 +5123,519 @@ SyntaxError (/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/models/use
   Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
   Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 07:38:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 342ms (Views: 321.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-18 07:38:02 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-18 07:38:07 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 10ms
+
+SyntaxError (/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/models/user.rb:15: syntax error, unexpected ':'
+  validates_presence_of :name, :email, :password unless: guest?
+                                                        ^):
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-18 07:38:07 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/models/user.rb:15: syntax error, unexpected ':'
+  validates_presence_of :name, :email, :password unless: guest?
+                                                        ^):
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-18 07:39:16 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 55ms
+
+NoMethodError (undefined method `guest?' for #<Class:0x00000108c87ec8>):
+  app/models/user.rb:15:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-18 07:39:54 -0500
+
+
+Started GET "/workouts/new" for 127.0.0.1 at 2014-08-18 07:39:56 -0500
+Processing by WorkoutsController#new as HTML
+  Rendered workouts/new.html.erb within layouts/application (98.5ms)
+Completed 200 OK in 119ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-18 07:40:01 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `guest?' for #<Class:0x00000106ecfd40>):
+  app/models/user.rb:15:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-18 07:40:01 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `guest?' for #<Class:0x00000101ad0870>):
+  app/models/user.rb:15:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 07:40:06 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-18 07:40:08 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"P/acCuQ+OBxHI3NhErHGat+T6OTvvpU6e1GOaP38o50="}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `guest?' for #<Class:0x00000101c32290>):
+  app/models/user.rb:15:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:15 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-08-18 07:42:18 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `guest?' for #<Class:0x00000108bef880>):
+  app/models/user.rb:15:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-08-18 07:42:18 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `guest?' for #<Class:0x000001058ac180>):
+  app/models/user.rb:15:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 07:42:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 07:42:23 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[35mWorkout Load (9.9ms)[0m  SELECT "workouts".* FROM "workouts"
+  Rendered workouts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 83ms (Views: 24.5ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-18 07:44:38 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 07:45:00 -0500
+
+
+Started GET "/workouts" for 127.0.0.1 at 2014-08-18 07:45:01 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.3ms)[0m  [1mSELECT "workouts".* FROM "workouts"[0m
+  Rendered workouts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 07:45:09 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/workouts/new" for 127.0.0.1 at 2014-08-18 07:45:11 -0500
+Processing by WorkoutsController#new as HTML
+  Rendered workouts/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2014-08-18 07:45:14 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[35mWorkout Load (0.1ms)[0m  SELECT "workouts".* FROM "workouts"
+  Rendered workouts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-08-18 09:03:22 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `guest?' for #<Class:0x00000106f170a0>):
+  app/models/user.rb:15:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-08-18 09:03:22 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `guest?' for #<Class:0x00000108fc5388>):
+  app/models/user.rb:15:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)

@@ -5,6 +5,9 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <div id="user_header">
+    <%= link_to "Sign up", new_user_path %>
+  </div>
 </head>
 <body>
 

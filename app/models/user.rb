@@ -12,7 +12,7 @@
 class User < ActiveRecord::Base
   has_many :workouts, dependent: :destroy
 
-  validates_presence_of :name, :email, :password unless: guest?
+  validates_presence_of :name, :email, :password, unless: guest?
   validates uniqueness_of :email, allow_blank: true
 
   # the following option is only available in Rails 4:
