@@ -11,21 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140720203742) do
+ActiveRecord::Schema.define(version: 20140817233409) do
 
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "guest"
   end
 
   create_table "workouts", force: true do |t|
-    t.string   "title"
     t.date     "date"
     t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
+
+  add_index "workouts", ["user_id"], name: "index_workouts_on_user_id"
 
 end

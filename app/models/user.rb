@@ -10,16 +10,28 @@
 #
 
 class User < ActiveRecord::Base
-  validates :name, presence: true
-  validates :email, presence: true
   has_many :workouts, dependent: :destroy
 
-  def create(name, email)
-    @user = User.new(name, email)
+  validates_presence_of :name, :email, :password unless: guest?
+  validates uniqueness_of :email, allow_blank: true
+
+  # the following option is only available in Rails 4:
+  has_secure_password(validations: false)
+
+  def create
+    @user = User.create(user_params)
+  end
+
+  def self.new_guest
+    new {|u| u.guest = true}
   end
 
   private
-    def self.authenticate_safely(user_name, user_email)
-      where(name: user_name, email: user_email).first
+    def user_params
+      params.require(:name, :email, :password).permit(:name, :email, :password)
     end
+
+    # def self.authenticate_safely(user_name, user_email)
+    #   where(name: user_name, email: user_email).first
+    # end
 end

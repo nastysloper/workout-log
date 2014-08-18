@@ -3017,3 +3017,2109 @@ Migrating to CreateUsers (20140720203742)
   [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
   [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserRefToWorkouts (20140810183626)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "workouts" ADD "user_id" integer[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_workouts_on_user_id" ON "workouts" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140810183626"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 16:11:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 309ms (Views: 288.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 16:11:35 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 16:11:35 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 16:11:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 16:11:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 16:11:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 16:11:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 16:11:35 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 16:11:36 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 16:11:36 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 16:11:36 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 16:11:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 16:11:36 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 16:11:39 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (32.8ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :Username %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2188582780'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 16:11:39 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :Username %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2200255300'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.7ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2014-08-10 16:11:50 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[35mWorkout Load (0.2ms)[0m  SELECT "workouts".* FROM "workouts"
+  Rendered workouts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 64ms (Views: 29.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 16:12:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 16:12:08 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :Username %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2188582780'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 16:12:08 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :Username %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2200255300'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 16:12:17 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 16:12:17 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 16:12:17 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 16:12:17 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 16:12:17 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 16:12:17 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 16:12:17 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 16:33:23 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :Username %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2188582780'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 16:33:23 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :Username %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2200255300'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 16:33:32 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 16:33:32 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 16:33:32 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 16:33:32 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 16:33:32 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 16:33:32 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 16:33:32 -0500
+
+
+Started GET "/workouts/new" for 127.0.0.1 at 2014-08-10 16:33:34 -0500
+Processing by WorkoutsController#new as HTML
+  Rendered workouts/new.html.erb within layouts/application (98.2ms)
+Completed 200 OK in 136ms (Views: 135.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 16:33:40 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :Username %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2188582780'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 16:33:40 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :Username %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2200255300'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-10 21:41:55.473712"], ["email", "me@me.com"], ["name", "Rich"], ["updated_at", "2014-08-10 21:41:55.473712"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["email", "richvogtjr@gmail.com"], ["updated_at", "2014-08-10 21:42:56.674702"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 17:01:45 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:01:55 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :name %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2206359200'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:01:55 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :name %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2215348360'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 17:02:35 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:02:37 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :name %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2206359200'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:02:37 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for :user, url: user_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :name %><br>
+    6:     <%= f.text_area :text %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2215348360'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:04:27 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `text' for #<User:0x000001083ac268>):
+    3: <%= form_for(@user) do |f| %>
+    4:   <p>
+    5:     <%= f.label :name %><br>
+    6:     <%= f.text_area :text %>
+    7:   </p>
+    8:   <p>
+    9:     <%= f.label :email %><br>
+  app/views/users/new.html.erb:6:in `block in _app_views_users_new_html_erb___3630930714395322076_2216719080'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2216719080'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:05:21 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `text' for #<User:0x00000108523740>):
+    3: <%= form_for(@user) do |f| %>
+    4:   <p>
+    5:     <%= f.label :name %><br>
+    6:     <%= f.text_area :text %>
+    7:   </p>
+    8:   <p>
+    9:     <%= f.label :email %><br>
+  app/views/users/new.html.erb:6:in `block in _app_views_users_new_html_erb___3630930714395322076_2217282940'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2217282940'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:26 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:05:28 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `text' for #<User:0x0000010a0b7e48>):
+    3: <%= form_for(@user) do |f| %>
+    4:   <p>
+    5:     <%= f.label :name %><br>
+    6:     <%= f.text_area :text %>
+    7:   </p>
+    8:   <p>
+    9:     <%= f.label :email %><br>
+  app/views/users/new.html.erb:6:in `block in _app_views_users_new_html_erb___3630930714395322076_2231742820'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2231742820'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:05:28 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `text' for #<User:0x000001072d4ff8>):
+    3: <%= form_for(@user) do |f| %>
+    4:   <p>
+    5:     <%= f.label :name %><br>
+    6:     <%= f.text_area :text %>
+    7:   </p>
+    8:   <p>
+    9:     <%= f.label :email %><br>
+  app/views/users/new.html.erb:6:in `block in _app_views_users_new_html_erb___3630930714395322076_2217282940'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2217282940'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 17:05:41 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 17:06:56 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Elmo", "email"=>"elmo@me.com"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 17:14:02 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Elmo", "email"=>"elmo@me.com"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 3ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 17:16:52 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:16:54 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `attr_accessible' for #<Class:0x00000104b2f908>):
+  app/models/user.rb:13:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:16:54 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `attr_accessible' for #<Class:0x00000106032c60>):
+  app/models/user.rb:13:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 17:18:12 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 17:18:14 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 19ms (Views: 14.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 17:18:22 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Elmo", "email"=>"elmo@me.com"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 17:19:09 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Elmo", "email"=>"elmo@me.com"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 17:26:27 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Elmo", "email"=>"elmo@me.com"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `to' for #<UsersController:0x0000010713e900>):
+  app/controllers/users_controller.rb:8:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 17:26:39 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Elmo", "email"=>"elmo@me.com"}, "commit"=>"Create User"}
+Redirected to 
+Completed 500 Internal Server Error in 1ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/users_controller.rb:8:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 18:23:59 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Elmo", "email"=>"elmo@me.com"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `workouts' for #<UsersController:0x00000108315408>):
+  app/controllers/users_controller.rb:8:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 18:30:40 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Elmo", "email"=>"elmo@me.com"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for(@user) do |f| %>
+    4:   <p>
+    5:     <%= f.label :name %><br>
+    6:     <%= f.text_area :name %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2169754260'
+  app/controllers/users_controller.rb:8:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 18:30:52 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 18:30:54 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 20ms (Views: 14.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 18:31:06 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Rod", "email"=>"rod@stewart.com"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Users#new</h1>
+    2: <h1>new workout</h1>
+    3: <%= form_for(@user) do |f| %>
+    4:   <p>
+    5:     <%= f.label :name %><br>
+    6:     <%= f.text_area :name %>
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3630930714395322076_2169754260'
+  app/controllers/users_controller.rb:8:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 18:33:10 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Rod", "email"=>"rod@stewart.com"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/views"
+):
+  app/controllers/users_controller.rb:8:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 19:42:06 -0500
+
+SyntaxError (/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/controllers/users_controller.rb:13: syntax error, unexpected ':', expecting keyword_end
+    render_as_text: "hello_workouts!"
+                   ^):
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 19:44:05 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Rod", "email"=>"rod@stewart.com"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/views"
+):
+  app/controllers/users_controller.rb:8:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 19:44:11 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-10 19:44:13 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 21ms (Views: 15.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 19:44:24 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Elmo", "email"=>"elmo@"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/views"
+):
+  app/controllers/users_controller.rb:8:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Elmo", "email"=>"elmo@"}, "commit"=>"Create User"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:03 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0rtfKm38aa5JXuN0U/LxzsqrgEYE/I9Vx7sOqPQ301M=", "user"=>{"name"=>"Elmo", "email"=>"elmo@"}, "commit"=>"Create User"}
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 19:49:23 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-10 20:02:22 -0500
+
+
+Started GET "/workouts" for 127.0.0.1 at 2014-08-10 20:03:06 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.4ms)[0m  [1mSELECT "workouts".* FROM "workouts"[0m
+  Rendered workouts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:07:14 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 298ms (Views: 277.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-17 17:07:15 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-17 17:07:19 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (117.9ms)
+Completed 500 Internal Server Error in 135ms
+
+ActionView::Template::Error (undefined method `password' for #<User:0x00000106ebf7b0>):
+    11:   </p>
+    12:   <p>
+    13:     <%= f.label :password %><br>
+    14:     <%= f.text_area :password %>
+    15:   </p>
+    16: 
+    17:   <p>
+  app/views/users/new.html.erb:14:in `block in _app_views_users_new_html_erb__2273380544239719585_2205561420'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__2273380544239719585_2205561420'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-17 17:07:19 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `password' for #<User:0x00000102b162c0>):
+    11:   </p>
+    12:   <p>
+    13:     <%= f.label :password %><br>
+    14:     <%= f.text_area :password %>
+    15:   </p>
+    16: 
+    17:   <p>
+  app/views/users/new.html.erb:14:in `block in _app_views_users_new_html_erb__2273380544239719585_2170092480'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__2273380544239719585_2170092480'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-17 17:08:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `password' for #<User:0x000001014e9290>):
+    11:   </p>
+    12:   <p>
+    13:     <%= f.label :password %><br>
+    14:     <%= f.text_area :password %>
+    15:   </p>
+    16: 
+    17:   <p>
+  app/views/users/new.html.erb:14:in `block in _app_views_users_new_html_erb___1218134258863774118_2159793160'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1218134258863774118_2159793160'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-17 17:08:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (46.4ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (undefined method `password' for #<User:0x00000108e36008>):
+    11:   </p>
+    12:   <p>
+    13:     <%= f.label :password %><br>
+    14:     <%= f.text_area :password %>
+    15:   </p>
+    16: 
+    17:   <p>
+  app/views/users/new.html.erb:14:in `block in _app_views_users_new_html_erb___3467249082708428940_2222138040'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3467249082708428940_2222138040'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-17 17:08:46 -0500
+
+
+Started GET "/workouts/new" for 127.0.0.1 at 2014-08-17 17:08:48 -0500
+Processing by WorkoutsController#new as HTML
+  Rendered workouts/new.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 31ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:08:50 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2014-08-17 17:08:52 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[35mWorkout Load (15.8ms)[0m  SELECT "workouts".* FROM "workouts"
+  Rendered workouts/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 99ms (Views: 30.4ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:08:54 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-17 17:08:56 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `password' for #<User:0x00000108ebc888>):
+    11:   </p>
+    12:   <p>
+    13:     <%= f.label :password %><br>
+    14:     <%= f.text_area :password %>
+    15:   </p>
+    16: 
+    17:   <p>
+  app/views/users/new.html.erb:14:in `block in _app_views_users_new_html_erb___3467249082708428940_2222339240'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3467249082708428940_2222339240'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-17 17:08:56 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `password' for #<User:0x000001030b5fc8>):
+    11:   </p>
+    12:   <p>
+    13:     <%= f.label :password %><br>
+    14:     <%= f.text_area :password %>
+    15:   </p>
+    16: 
+    17:   <p>
+  app/views/users/new.html.erb:14:in `block in _app_views_users_new_html_erb___3467249082708428940_2222138040'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3467249082708428940_2222138040'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+  [1m[36m (28.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (19.4ms)[0m  select sqlite_version(*)
+  [1m[36m (24.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateWorkouts (20140526231922)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "text" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140526231922"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Migrating to CreateUsers (20140720203742)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140720203742"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Migrating to AddUserRefToWorkouts (20140810183626)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "workouts" ADD "user_id" integer
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_workouts_on_user_id" ON "workouts" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140810183626"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 71ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-17 17:14:09 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-17 17:14:11 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (16.9ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined method `password' for #<User:0x000001047f0b48>):
+    11:   </p>
+    12:   <p>
+    13:     <%= f.label :password %><br>
+    14:     <%= f.text_area :password %>
+    15:   </p>
+    16: 
+    17:   <p>
+  app/views/users/new.html.erb:14:in `block in _app_views_users_new_html_erb___1828244438624455634_2218788980'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1828244438624455634_2218788980'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-17 17:14:11 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `password' for #<User:0x00000108bced88>):
+    11:   </p>
+    12:   <p>
+    13:     <%= f.label :password %><br>
+    14:     <%= f.text_area :password %>
+    15:   </p>
+    16: 
+    17:   <p>
+  app/views/users/new.html.erb:14:in `block in _app_views_users_new_html_erb___1828244438624455634_2220801240'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1828244438624455634_2220801240'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-17 17:16:47 -0500
+
+
+Started GET "/workouts" for 127.0.0.1 at 2014-08-17 17:16:48 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[35mWorkout Load (0.2ms)[0m  SELECT "workouts".* FROM "workouts"
+  Rendered workouts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 14ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:16:50 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/workouts/new" for 127.0.0.1 at 2014-08-17 17:16:52 -0500
+Processing by WorkoutsController#new as HTML
+  Rendered workouts/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:16:53 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2014-08-17 17:16:55 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (0.1ms)[0m  [1mSELECT "workouts".* FROM "workouts"[0m
+  Rendered workouts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:16:56 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/workouts/new" for 127.0.0.1 at 2014-08-17 17:16:58 -0500
+Processing by WorkoutsController#new as HTML
+  Rendered workouts/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-17 17:17:00 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `password' for #<User:0x00000101b18c10>):
+    11:   </p>
+    12:   <p>
+    13:     <%= f.label :password %><br>
+    14:     <%= f.text_area :password %>
+    15:   </p>
+    16: 
+    17:   <p>
+  app/views/users/new.html.erb:14:in `block in _app_views_users_new_html_erb___1828244438624455634_2218788980'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1828244438624455634_2218788980'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-17 17:17:01 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `password' for #<User:0x00000106e419f0>):
+    11:   </p>
+    12:   <p>
+    13:     <%= f.label :password %><br>
+    14:     <%= f.text_area :password %>
+    15:   </p>
+    16: 
+    17:   <p>
+  app/views/users/new.html.erb:14:in `block in _app_views_users_new_html_erb___1828244438624455634_2220801240'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1828244438624455634_2220801240'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-17 17:17:53 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-17 17:17:54 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uuAGYuGrUxFtYbAcYL7gKFbNsE2sUQtRbevP61G0mME=", "user"=>{"name"=>"Rich", "email"=>"rich@me.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-17 17:19:58 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 18:37:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.1) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (35.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddGuestToUsers (20140817233409)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD "guest" boolean[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140817233409"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 417ms (Views: 409.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:40 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"uuAGYuGrUxFtYbAcYL7gKFbNsE2sUQtRbevP61G0mME="}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-17 18:38:43 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-17 21:19:02 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 786ms (Views: 767.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-17 21:19:03 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-17 21:19:07 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"uuAGYuGrUxFtYbAcYL7gKFbNsE2sUQtRbevP61G0mME="}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/models/user.rb:15: syntax error, unexpected ':'
+  validates_presence_of :name, :email, :password unless: guest?
+                                                        ^):
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)

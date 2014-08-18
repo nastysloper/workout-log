@@ -1,13 +1,17 @@
 <h1>Users#new</h1>
 <h1>new workout</h1>
-<%= form_for :user, url: user_path do |f| %>
+<%= form_for(@user) do |f| %>
   <p>
-    <%= f.label :Username %><br>
-    <%= f.text_area :text %>
+    <%= f.label :name %><br>
+    <%= f.text_area :name %>
   </p>
   <p>
-    <%= f.label :Password %><br>
-    <%= f.password_field :text %>
+    <%= f.label :email %><br>
+    <%= f.text_area :email %>
+  </p>
+  <p>
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
   </p>
 
   <p>
