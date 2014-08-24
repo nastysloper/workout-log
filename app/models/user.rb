@@ -12,8 +12,8 @@
 class User < ActiveRecord::Base
   has_many :workouts, dependent: :destroy
 
-  validates_presence_of :name, :email, :password, unless: guest?
-  validates uniqueness_of :email, allow_blank: true
+  #validates_presence_of :name, :email
+  #validates_uniqueness_of :email
 
   # the following option is only available in Rails 4:
   has_secure_password(validations: false)
@@ -22,9 +22,9 @@ class User < ActiveRecord::Base
     @user = User.create(user_params)
   end
 
-  def self.new_guest
-    new {|u| u.guest = true}
-  end
+  # def self.new_guest
+  #   new {|u| u.guest = true}
+  # end
 
   private
     def user_params

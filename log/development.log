@@ -5639,3 +5639,664 @@ NoMethodError (undefined method `guest?' for #<Class:0x00000108fc5388>):
   Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
   Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 10:08:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 376ms (Views: 322.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-24 10:08:48 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-24 10:09:51 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `guest?' for #<Class:0x00000106c2dd58>):
+  app/models/user.rb:15:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-24 10:09:51 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `guest?' for #<Class:0x0000010185f2a8>):
+  app/models/user.rb:15:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-24 12:17:26 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `uniqueness_of' for #<Class:0x000001082d3940>):
+  app/models/user.rb:16:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-24 12:20:03 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (102.2ms)
+Completed 200 OK in 111ms (Views: 108.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 12:20:04 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-24 12:20:24 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wrpNhvg0CdcC2Bmt/DK/HebuUWX7uNdbI9CK0gKIFME=", "user"=>{"name"=>"Mack", "email"=>"mack@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for #<ActionController::Parameters:0x0000010390b1c8>):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.5ms)
+  [1m[36mUser Load (38.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'j@com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateWorkouts (20140526231922)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "text" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140526231922"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to CreateUsers (20140720203742)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140720203742"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Migrating to AddUserRefToWorkouts (20140810183626)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "workouts" ADD "user_id" integer
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_workouts_on_user_id" ON "workouts" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140810183626"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to AddGuestToUsers (20140817233409)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "users" ADD "guest" boolean[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140817233409"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+[0m
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateWorkouts (20140526231922)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "text" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140526231922"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140720203742)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140720203742"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to AddUserRefToWorkouts (20140810183626)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "workouts" ADD "user_id" integer
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_workouts_on_user_id" ON "workouts" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140810183626"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to AddGuestToUsers (20140817233409)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "guest" boolean[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140817233409"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+[0m
+  [1m[36m (302.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (20.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateWorkouts (20140526231922)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "text" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140526231922"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Migrating to CreateUsers (20140720203742)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140720203742"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to AddUserRefToWorkouts (20140810183626)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "workouts" ADD "user_id" integer
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_workouts_on_user_id" ON "workouts" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140810183626"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Migrating to AddGuestToUsers (20140817233409)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "guest" boolean[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140817233409"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+[0m
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateWorkouts (20140526231922)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "text" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140526231922"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateUsers (20140720203742)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140720203742"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddUserRefToWorkouts (20140810183626)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "workouts" ADD "user_id" integer
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_workouts_on_user_id" ON "workouts" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140810183626"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+[0m
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'nick@me.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'nick@me.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateWorkouts (20140526231922)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "text" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140526231922"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateUsers (20140720203742)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140720203742"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddUserRefToWorkouts (20140810183626)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "workouts" ADD "user_id" integer
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_workouts_on_user_id" ON "workouts" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140810183626"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 13:04:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 437ms (Views: 429.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 13:04:44 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-24 13:04:46 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 70ms (Views: 62.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-24 13:05:02 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wrpNhvg0CdcC2Bmt/DK/HebuUWX7uNdbI9CK0gKIFME=", "user"=>{"name"=>"Nick", "email"=>"nick.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for #<ActionController::Parameters:0x000001081872a8>):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-24 13:06:13 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wrpNhvg0CdcC2Bmt/DK/HebuUWX7uNdbI9CK0gKIFME=", "user"=>{"name"=>"Nick", "email"=>"nick.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 4ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-24 13:18:09 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wrpNhvg0CdcC2Bmt/DK/HebuUWX7uNdbI9CK0gKIFME=", "user"=>{"name"=>"Nick", "email"=>"nick.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `to' for #<UsersController:0x000001046f0ba8>):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 13:18:13 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-24 13:18:15 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-24 13:18:32 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wrpNhvg0CdcC2Bmt/DK/HebuUWX7uNdbI9CK0gKIFME=", "user"=>{"name"=>"foo", "email"=>"bar", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `to' for #<UsersController:0x000001019a7ca0>):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-24 13:19:15 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wrpNhvg0CdcC2Bmt/DK/HebuUWX7uNdbI9CK0gKIFME=", "user"=>{"name"=>"foo", "email"=>"bar", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:16 -0500
+
+
+Started GET "/workouts/new" for 127.0.0.1 at 2014-08-24 13:19:27 -0500
+Processing by WorkoutsController#new as HTML
+  Rendered workouts/new.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/workouts" for 127.0.0.1 at 2014-08-24 13:19:33 -0500
+Processing by WorkoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wrpNhvg0CdcC2Bmt/DK/HebuUWX7uNdbI9CK0gKIFME=", "workout"=>{"text"=>"baz", "date"=>"2014-08-24"}, "commit"=>"Save Workout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "workouts" ("created_at", "date", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-08-24 18:19:33.979605"], ["date", "2014-08-24"], ["text", "baz"], ["updated_at", "2014-08-24 18:19:33.979605"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/workouts/1
+Completed 302 Found in 47ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/workouts/1" for 127.0.0.1 at 2014-08-24 13:19:33 -0500
+Processing by WorkoutsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWorkout Load (0.2ms)[0m  [1mSELECT  "workouts".* FROM "workouts"  WHERE "workouts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered workouts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-24 13:19:34 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 13:19:35 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/workouts" for 127.0.0.1 at 2014-08-24 13:19:37 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[35mWorkout Load (0.2ms)[0m  SELECT "workouts".* FROM "workouts"
+  Rendered workouts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 13:19:39 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
