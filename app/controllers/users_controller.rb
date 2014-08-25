@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def show
+    # this method is called when you create a new user.
     @user = User.find(params[:id])
     render text: "hello_workouts!"
   end

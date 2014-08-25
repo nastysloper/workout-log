@@ -8166,3 +8166,96 @@ ActionView::MissingTemplate (Missing template sessions/new, application/new with
 
 
   Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 22:04:54 -0500
+
+SyntaxError (/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/helpers/application_helper.rb:10: unterminated string meets end of file
+/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/helpers/application_helper.rb:10: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/welcome_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-08-24 22:13:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-24 22:13:15 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-08-24 22:14:01 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 17ms (Views: 11.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-24 22:14:13 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wrpNhvg0CdcC2Bmt/DK/HebuUWX7uNdbI9CK0gKIFME=", "user"=>{"name"=>"Joe", "email"=>"joe@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'joe@me.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-08-25 03:14:13.990140"], ["email", "joe@me.com"], ["name", "Joe"], ["password_digest", "$2a$10$TARMkAHUzuEKahkaOMOHFeWRl/DPknVNuuO509NlnghE4CqVYympm"], ["updated_at", "2014-08-25 03:14:13.990140"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 88ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-08-24 22:14:13 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-08-24 22:14:33 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms)
