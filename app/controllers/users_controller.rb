@@ -10,10 +10,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    # The following causes a forbidden attributes error.
-    # @user = User.new(params[:user])
     @user = User.new(user_params)
     if @user.save
+      sign_in @user
       flash[:success] = "Welcome to the sample app!"
       redirect_to @user
     else

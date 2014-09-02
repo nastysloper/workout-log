@@ -9862,3 +9862,3729 @@ SyntaxError (/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/views/sess
   Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
   Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:41 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"Mack", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:47 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"Mack", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 15:54:56 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:59 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:59 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:59 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 15:54:59 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 15:55:43 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-01 15:55:51 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-09-01 15:55:56 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@me.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:32 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"mick@foo.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 15:57:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRememberTokenToUsers (20140901211149)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "remember_token" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140901211149"]]
+  [1m[36m (100.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_user_id' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 16:19:03 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:19:03 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:19:03 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:19:03 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:19:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:19:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:19:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:19:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:19:03 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:26 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:26 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:26 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:26 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:26 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 16:20:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 49ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:37 -0500
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-09-01 16:20:40 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:20:48 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"mick@foo.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 6.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:48 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:48 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:48 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:48 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:20:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"Jack", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:56 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:56 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:56 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:20:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:20:56 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 16:35:51 -0500
+
+SyntaxError (/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/helpers/sessions_helper.rb:4: syntax error, unexpected ',', expecting =>
+...token] = { user.remember_token, expires: 1.day.from_now.utc }
+...                               ^
+/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/helpers/sessions_helper.rb:4: syntax error, unexpected '}', expecting keyword_end):
+  app/controllers/application_controller.rb:28:in `<top (required)>'
+  app/controllers/welcome_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:08 -0500
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-09-01 16:39:10 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:39:17 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"mick@foo.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/models/user.rb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/sessions_controller.rb:6:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"mick@foo.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:49 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"mick@foo.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:39:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:40:14 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:40:14 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:40:14 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:40:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:40:14 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"mick@foo.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:57 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:46:59 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:03 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-01 16:47:06 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-01 16:47:21 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "user"=>{"name"=>"Joe", "email"=>"joe@blow.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-01 21:47:21.336419"], ["email", "joe@blow.com"], ["name", "Joe"], ["password_digest", "$2a$10$lHdnaKmZ03hEhCefCEC9uO.xfDHz05D6RTd/NHJCcveaYLZY.XpZm"], ["remember_token", "bkNUk-QKYdQaOZRBibYnkQ"], ["updated_at", "2014-09-01 21:47:21.336419"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 77ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2014-09-01 16:47:21 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:29 -0500
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-09-01 16:47:31 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:39 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:47:41 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"mick@foo.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:50:06 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:11 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"jkdfk", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:52:19 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:53:55 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:11 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"mick@foo.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:18 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:54:24 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:51 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 16:56:57 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:35 -0500
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-09-01 17:02:38 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 75ms (Views: 5.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 17:02:46 -0500
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:00 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 17:03:56 -0500
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-09-01 17:03:58 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 17:04:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1
+Redirected to http://localhost:3000welcome#index
+Completed 302 Found in 69ms (ActiveRecord: 0.6ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 17:04:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1[0m
+Redirected to http://localhost:3000welcome#index
+Completed 302 Found in 63ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 17:04:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1
+Redirected to http://localhost:3000welcome#index
+Completed 302 Found in 60ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 17:04:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1[0m
+Redirected to http://localhost:3000welcome#index
+Completed 302 Found in 61ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 17:04:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1
+Redirected to http://localhost:3000welcome#index
+Completed 302 Found in 65ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 17:04:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1[0m
+Redirected to http://localhost:3000welcome#index
+Completed 302 Found in 66ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 17:04:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1
+Redirected to http://localhost:3000welcome#index
+Completed 302 Found in 61ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2014-09-01 17:04:39 -0500
+
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController):
+  actionpack (4.1.1) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 17:04:48 -0500
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-09-01 17:04:50 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-09-01 17:04:55 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"mick@foo.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'mick@foo.com' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 76ms (Views: 7.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 17:05:07 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 17:05:15 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1
+Completed 500 Internal Server Error in 65ms
+
+NameError (undefined local variable or method `root' for #<SessionsController:0x000001053261e8>):
+  app/controllers/sessions_controller.rb:9:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 21:41:04 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[36mUser Load (46.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1[0m
+Completed 500 Internal Server Error in 199ms
+
+NameError (undefined local variable or method `root' for #<SessionsController:0x000001010439c0>):
+  app/controllers/sessions_controller.rb:9:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "session"=>{"email"=>"joe@blow.com", "password"=>"[FILTERED]"}, "commit"=>"Save Session"}
+  [1m[35mUser Load (10.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'joe@blow.com' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 93ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:44:22 -0500
+
+
+Started DELETE "/sessions/current" for 127.0.0.1 at 2014-09-01 21:45:08 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:45:08 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/sessions/current" for 127.0.0.1 at 2014-09-01 21:45:13 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:45:13 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:46:50 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:52 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:55 -0500
+
+
+Started DELETE "/sessions/current" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 21:46:57 -0500
+
+
+Started DELETE "/sessions/current" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:49:38 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:12 -0500
+
+
+Started DELETE "/sessions/current" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:14 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (14.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 315ms (Views: 290.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:34 -0500
+
+
+Started DELETE "/sessions/current" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:36 -0500
+
+
+Started DELETE "/sessions/current" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:47 -0500
+
+
+Started DELETE "/sessions/current" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:53:52 -0500
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started DELETE "/sessions/current" for 127.0.0.1 at 2014-09-01 22:02:23 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:02:23 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (undefined local variable or method `signout_path' for #<#<Class:0x00000105ab2c40>:0x00000105ab2290>):
+     9:   <% if current_user %>
+    10:     Logged in as <%= current_user.email %>
+    11:   <%# <%= link_to "Log out", session_path("current"), method: "delete" %1> %>
+    12:   <%= link_to "Log out", signout_path, method: "delete" %>
+    13:   <% else %>
+    14:     <%= link_to "Sign up", new_user_path %>
+    15:     <%= link_to "Sign in", new_session_path %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__600477513022988204_2195011560'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:03:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (undefined local variable or method `signout_path' for #<#<Class:0x00000103473778>:0x00000103470988>):
+     9:   <% if current_user %>
+    10:     Logged in as <%= current_user.email %>
+    11:   <%# <%= link_to "Log out", session_path("current"), method: "delete" %1> %>
+    12:   <%= link_to "Log out", signout_path, method: "delete" %>
+    13:   <% else %>
+    14:     <%= link_to "Sign up", new_user_path %>
+    15:     <%= link_to "Sign in", new_session_path %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2366781239151581369_2175750240'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:49 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:52 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:53 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:05:55 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:05:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:55 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:55 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:55 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:05:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:56 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:56 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:56 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:05:56 -0500
+
+
+Started GET "/workouts" for 127.0.0.1 at 2014-09-01 22:05:58 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[36mWorkout Load (15.3ms)[0m  [1mSELECT "workouts".* FROM "workouts"[0m
+  Rendered workouts/index.html.erb within layouts/application (26.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 61ms (Views: 16.6ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:05:59 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-01 22:06:01 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  app/controllers/users_controller.rb:30:in `user_params'
+  app/controllers/users_controller.rb:13:in `create'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/workouts/new" for 127.0.0.1 at 2014-09-01 22:06:10 -0500
+Processing by WorkoutsController#new as HTML
+  Rendered workouts/new.html.erb within layouts/application (87.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 134ms (Views: 133.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/workouts" for 127.0.0.1 at 2014-09-01 22:06:19 -0500
+Processing by WorkoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A=", "workout"=>{"text"=>"qux", "date"=>"2014-09-01"}, "commit"=>"Save Workout"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (12.8ms)[0m  INSERT INTO "workouts" ("created_at", "date", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-09-02 03:06:19.916365"], ["date", "2014-09-01"], ["text", "qux"], ["updated_at", "2014-09-02 03:06:19.916365"]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/workouts/3
+Completed 302 Found in 64ms (ActiveRecord: 22.5ms)
+
+
+Started GET "/workouts/3" for 127.0.0.1 at 2014-09-01 22:06:19 -0500
+Processing by WorkoutsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mWorkout Load (0.2ms)[0m  SELECT  "workouts".* FROM "workouts"  WHERE "workouts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered workouts/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:06:19 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:06:19 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:06:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:20 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:06:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:06:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:20 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:20 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:20 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:20 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:20 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:06:21 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:06:23 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:06:40 -0500
+
+ActionController::RoutingError (No route matches [DELETE] "/signout"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:55 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:57 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:58 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:08:59 -0500
+
+
+Started GET "/workouts" for 127.0.0.1 at 2014-09-01 22:09:01 -0500
+Processing by WorkoutsController#index as HTML
+  [1m[35mWorkout Load (0.2ms)[0m  SELECT "workouts".* FROM "workouts"
+  Rendered workouts/index.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/workouts/new" for 127.0.0.1 at 2014-09-01 22:09:03 -0500
+Processing by WorkoutsController#new as HTML
+  Rendered workouts/new.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:09:06 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:09:07 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/?notice=Logged+out%21
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?notice=Logged+out%21" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+Processing by WelcomeController#index as HTML
+  Parameters: {"notice"=>"Logged out!"}
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:15 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/?notice=Logged+out%21
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?notice=Logged+out%21" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+Processing by WelcomeController#index as HTML
+  Parameters: {"notice"=>"Logged out!"}
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:22 -0500
+
+
+Started GET "/?notice=Logged+out%21" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+Processing by WelcomeController#index as HTML
+  Parameters: {"notice"=>"Logged out!"}
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:35 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:37 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/?notice=Logged+out%21
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?notice=Logged+out%21" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+Processing by WelcomeController#index as HTML
+  Parameters: {"notice"=>"Logged out!"}
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:12:47 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:13:02 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:13:03 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:24:48 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template sessions/you are signed out, application/you are signed out with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/richvogt/Code/ruby/rails_projects/rails4/wrkt/app/views"
+):
+  app/controllers/sessions_controller.rb:20:in `destroy'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:25:17 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `text' for #<SessionsController:0x000001018dd540>):
+  app/controllers/sessions_controller.rb:20:in `destroy'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:26:09 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:27:40 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:27:40 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:27:40 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:27:41 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:09 -0500
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-09-01 22:28:17 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/DCyYtJt3Bzk94XE1CT0lfEz/XA1V7OEFQ+NMnq4F7A="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 22:28:18 -0500

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
    root 'welcome#index'
   #root to: 'workouts#index'
+  resources :users
+  resources :sessions, only: [:new, :create, :delete]
 
   get 'welcome/index'
   get 'users/new'
@@ -8,10 +10,10 @@ Rails.application.routes.draw do
   # Sessions
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
-  get 'logout', to: 'sessions#destroy', as: 'logout'
+  # get 'signout', to: 'sessions#destroy', as: 'logout'
 
-  resources :users
-  resources :sessions
+  match '/signout', to: 'sessions#destroy', via: :delete
+
   resources :workouts
 
   # The priority is based upon order of creation: first created -> highest priority.
