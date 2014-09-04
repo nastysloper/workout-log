@@ -2,19 +2,17 @@ Rails.application.routes.draw do
    root 'welcome#index'
   #root to: 'workouts#index'
   resources :users
-  resources :sessions, only: [:new, :create, :delete]
+  resources :workouts
+  resources :sessions, only: [:new, :create, :destroy]
 
   get 'welcome/index'
   get 'users/new'
 
   # Sessions
-  get 'signup', to: 'users#new', as: 'signup'
-  get 'login', to: 'sessions#new', as: 'login'
-  # get 'signout', to: 'sessions#destroy', as: 'logout'
+  match '/signup', to: 'users#new', via: 'get'
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
 
-  match '/signout', to: 'sessions#destroy', via: :delete
-
-  resources :workouts
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

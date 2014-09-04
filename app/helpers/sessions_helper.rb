@@ -19,6 +19,7 @@ module SessionsHelper
 
   def sign_out
     self.current_user = nil
+
     puts "Why are you not signing out?!"
     cookies.delete(:remember_token)
   end
