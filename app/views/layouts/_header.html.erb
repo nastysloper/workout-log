@@ -1,16 +1,13 @@
-<div class="header">
-    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">Northeast Architects</a>
-
-        <ul>
-            <li class="pure-menu-selected"><a href="#">Home</a></li>
-            <li><a href="#">Tour</a></li>
-            <li><a href="#">Sign Up</a></li>
-<%= link_to "Users", '#' %>
-<%= link_to "Settings", '#' %>
-<%= link_to "Sign out", signout_path, method: "delete" %>
-<%= link_to "Profile", current_user %>
-
-        </ul>
-    </div>
+<div class="px2 bg-dark-gray">
+  <nav class="nav mobile-nav-table nav-big nav-flush bold nav-bass-dark">
+  <% if current_user %>
+    Logged in as <%= current_user.email %>
+  <%= link_to "Profile", current_user %>
+  <%= link_to "Log outta here", signout_path, method: "delete" %>
+  <% else %>
+    <%= link_to "Sign up", new_user_path %>
+    <%= link_to "Sign in", new_session_path %>
+    <%= link_to "Sign out", signout_path, method: "delete" %>
+  <% end %>
+  </nav>
 </div>

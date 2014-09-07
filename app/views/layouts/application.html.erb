@@ -5,41 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="A layout example that shows off a responsive product landing page.">
 
-<title><%= full_title(yield(:title)) %></title>
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-<!--[if lte IE 8]>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
-<![endif]-->
-<!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-<!--<![endif]-->
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-<!--        <link rel="stylesheet" href="css/layouts/marketing.css">-->
-    <!--<![endif]-->
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-
+  <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <div id="user_header">
-  <% if current_user %>
-    Logged in as <%= current_user.email %>
-  <%= link_to "Log outta here", signout_path, method: "delete" %>
-  <% else %>
-    <%= link_to "Sign up", new_user_path %>
-    <%= link_to "Sign in", new_session_path %>
-  <% end %>
   </div>
 </head>
 <body>
-
-<%= yield %>
-
+  <%= render 'layouts/header' %>
+  <%= yield %>
 </body>
 </html>
 
-
-/div>
