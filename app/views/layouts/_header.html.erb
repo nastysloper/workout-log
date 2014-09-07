@@ -2,12 +2,10 @@
   <nav class="nav mobile-nav-table nav-big nav-flush bold nav-bass-dark">
   <% if current_user %>
     Logged in as <%= current_user.email %>
-  <%= link_to "Profile", current_user %>
-  <%= link_to "Log outta here", signout_path, method: "delete" %>
+  <%= link_to "Sign out", signout_path, method: "delete" %>
   <% else %>
     <%= link_to "Sign up", new_user_path %>
     <%= link_to "Sign in", new_session_path %>
-    <%= link_to "Sign out", signout_path, method: "delete" %>
   <% end %>
   </nav>
 </div>
