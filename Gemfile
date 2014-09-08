@@ -13,6 +13,9 @@ group :development do
   gem 'spring'
   gem 'debugger'
   gem 'annotate'
+  gem 'pry'
+  gem 'pry-nav'
+  gem 'pry-stack_explorer'
 end
 
 group :production do
