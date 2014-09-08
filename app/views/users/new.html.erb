@@ -1,5 +1,4 @@
-<h1>Users#new</h1>
-
+<div class="new-user">
 <h1>Sign up</h1>
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
@@ -36,3 +35,4 @@
 <%= link_to 'Home', controller: 'welcome' %>
 
 <p>Find me in app/views/users/new.html.erb</p>
+</div>

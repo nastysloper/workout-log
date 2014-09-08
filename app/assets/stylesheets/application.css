@@ -14,20 +14,10 @@
  *= require_self
  */
 
-
-h1, th, td {
-  font-family: helvetica;
+body {
+  background-image: url('../seattle-crop2.jpg');
+  min-height: 600px;
 }
 
-a {
-  text-decoration: none;
-  font-family: helvetica;
-  display: inline-block;
-  padding: 5px 0 5px 0;
-}
-
-a:hover {
-  color: pink;
-}
-
+.banana { min-height: 600px; }
 

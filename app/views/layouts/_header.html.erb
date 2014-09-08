@@ -1,5 +1,5 @@
-<div class="px2 bg-dark-gray">
-  <nav class="nav mobile-nav-table nav-big nav-flush bold nav-bass-dark">
+<div class="px2 bg-dark-gray clearfix">
+  <nav class="nav mobile-nav-table nav-big nav-flush bold nav-bass-dark right">
   <% if current_user %>
     Logged in as <%= current_user.email %>
   <%= link_to "Sign out", signout_path, method: "delete" %>
@@ -9,3 +9,8 @@
   <% end %>
   </nav>
 </div>
+<header class="p2 blue bg-dark-gray center">
+  <div class="container">
+    <h1 class="avenir h1 caps">Workout App</h1>
+  </div>
+</header>
