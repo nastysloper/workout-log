@@ -1,16 +1,5 @@
-Pure CSS Layout Examples
-========================
+Workout log application.
 
-Layout examples using [Pure CSS][pure] compiled from the [pure-site][] project.
+Major task: figure out how to import the data from Heroku into the new app.
 
-[pure]: http://purecss.io/
-[pure-site]: https://github.com/yui/pure-site
-
-
-License
--------
-
-This software is free to use under the Yahoo! Inc. BSD license.
-See the [LICENSE file][] for license text and copyright information.
-
-[LICENSE file]: https://github.com/yui/pure-site/blob/master/LICENSE.md
+Also, why is the .gitignore getting ignored?

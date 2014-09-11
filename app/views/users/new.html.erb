@@ -1,6 +1,7 @@
 <% provide(:title, 'Sign up') %>
+<div class = "form form-light">
 <h1>Sign Up</p>
-<%= form_for(@user) do |f| %>
+  <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div class="error messages">
       <h2>Form is invalid</h2>
@@ -12,19 +13,28 @@
     </div>
   <% end %>
 
-    <%= f.label :name %><br>
+    <div class="mr1">
+      <%= f.label :name %>
+  </div>
     <%= f.text_field :name %>
 
-    <%= f.label :email %><br>
+    <div class="mr1">
+    <%= f.label :email %>
+    </div>
     <%= f.text_field :email %>
 
-    <%= f.label :password %><br>
+    <div class="mr1">
+    <%= f.label :password %>
+    </div>
     <%= f.password_field :password %>
 
-    <%= f.label :password_confirmation %><br>
+    <div class="mr1">
+    <%= f.label :password_confirmation %>
+    </div>
     <%= f.password_field :password_confirmation %>
 
   <div class="actions"><%= f.submit %></div class=>
 <% end %>
 
 <%= link_to 'Home', controller: 'welcome' %>
+</form>

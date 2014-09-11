@@ -2,4 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+label {
 
+}
+
+input {
+  background-color: white;
+  transition: box-shadow .2s ease;
+  border-color: #cccccc;
+  border-radius: 0.25rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #0096cc;
+  box-shadow: 0 0 0.125rem rgba(0, 150, 204, 0.5);
+}
