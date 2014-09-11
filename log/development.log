@@ -21090,3 +21090,3186 @@ ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
 
 
 Started GET "/assets/mount-shuksannorth-cascades-national-parkwashington.jpg" for 127.0.0.1 at 2014-09-07 20:07:28 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 18:32:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (50.6ms)
+Completed 200 OK in 420ms (Views: 398.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 18:32:31 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 18:32:31 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 18:32:31 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 18:32:31 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 18:32:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 18:32:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 18:32:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 18:32:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 18:32:32 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 18:32:32 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 18:32:32 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 18:32:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 18:32:32 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 18:32:32 -0500
+
+
+Started GET "/assets/mount-shuksannorth-cascades-national-parkwashington.jpg" for 127.0.0.1 at 2014-09-08 18:32:32 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-08 18:32:32 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (62.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/assets/mount-shuksannorth-cascades-national-parkwashington.jpg" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-08 18:33:53 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 18:34:03 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (69.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 91ms (Views: 89.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-08 18:34:03 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-08 18:36:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:44 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 18:36:46 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 104ms (Views: 103.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 18:43:31 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:16 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:40 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:41 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 18:46:51 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 18:47:19 -0500
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `pry' for #<Binding:0x00000109898a78>):
+  app/controllers/users_controller.rb:9:in `new'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (7.5ms)
+Completed 200 OK in 60ms (Views: 52.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/assets/mount-shuksannorth-cascades-national-parkwashington.jpg" for 127.0.0.1 at 2014-09-08 18:48:15 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 18:48:17 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (386.0ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (16.2ms)
+Completed 200 OK in 89566ms (Views: 513.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bname%5D=Jack&user%5Bemail%5D=jack2%40me.com&user%5Bpassword%5D=[FILTERED]&user%5Bpassword_confirmation%5D=[FILTERED]&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:04:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"name"=>"Jack", "email"=>"jack2@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (18.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (4.3ms)
+Completed 200 OK in 82ms (Views: 67.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-08 19:04:58 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.9ms)
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bname%5D=Jack&user%5Bemail%5D=jack2%40me.com&user%5Bpassword%5D=[FILTERED]&user%5Bpassword_confirmation%5D=[FILTERED]&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"name"=>"Jack", "email"=>"jack2@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-08 19:06:18 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/assets/mount-shuksannorth-cascades-national-parkwashington.jpg" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-08 19:14:42 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.5ms)
+
+
+Started GET "/assets/mount-shuksannorth-cascades-national-parkwashington.jpg" for 127.0.0.1 at 2014-09-08 19:16:57 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 19:17:32 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:33 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:42 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:17:50 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 19:18:42 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 19:20:03 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:30 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:20:39 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:25:37 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:26:32 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-08 19:39:50 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:40:28 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:41:21 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:12 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:53 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:42:58 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:42:59 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:43:56 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:04 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:07 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:10 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:23 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:35 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (8.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:42 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:58 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:47:59 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:59 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:59 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:59 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:59 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:47:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:47:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:00 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:00 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:00 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:00 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:00 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:09 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:48:57 -0500
+
+
+Started GET "/users/new?utf8=%E2%9C%93&authenticity_token=kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0%3D&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=&commit=Create+User" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kmq2cOxwiWTOlYNcUXU77ae73dKOKYJ5qaaLEtTf0U0=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 19:50:01 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (33.0ms)
+Completed 200 OK in 132ms (Views: 109.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (23.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.4ms)
+
+
+Started GET "/assets/mount-shuksannorth-cascades-national-parkwashington.jpg" for 127.0.0.1 at 2014-09-09 12:29:30 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-09 12:29:36 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (50.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:48 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:48 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:48 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:48 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:48 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-09 12:29:48 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:32:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (48.7ms)
+Completed 200 OK in 340ms (Views: 321.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.3ms)
+
+
+Started GET "/assets/mount-shuksannorth-cascades-national-parkwashington.jpg" for 127.0.0.1 at 2014-09-11 05:32:05 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/assets/mount-shuksannorth-cascades-national-parkwashington.jpg" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-11 05:33:01 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.6ms)
+
+
+Started GET "/assets/mount-shuksannorth-cascades-national-parkwashington.jpg" for 127.0.0.1 at 2014-09-11 05:33:06 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/seattle-crop2.jpg" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/seattle-crop2.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/richvogt/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/richvogt/.rvm/gems/ruby-2.1.1@workout-log/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.3ms)
+
+
+Started GET "/assets/mount-shuksannorth-cascades-national-parkwashington.jpg" for 127.0.0.1 at 2014-09-11 05:33:28 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 05:34:44 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:00 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 05:35:27 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:04 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:30 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 05:36:34 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/basscss.css?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/workouts.css?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/workouts.js?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-11 05:37:20 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-11 05:37:23 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (70.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 80ms (Views: 78.5ms | ActiveRecord: 0.3ms)

@@ -1,5 +1,5 @@
-<div class="new-user">
-<h1>Sign up</h1>
+<% provide(:title, 'Sign up') %>
+<h1>Sign Up</p>
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div class="error messages">
@@ -12,27 +12,19 @@
     </div>
   <% end %>
 
-  <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
-  </div>
-  <div class="field"
+
     <%= f.label :email %><br>
     <%= f.text_field :email %>
-  </div>
-  <div class="field">
+
     <%= f.label :password %><br>
     <%= f.password_field :password %>
-  </div>
-  <div class="field">
+
     <%= f.label :password_confirmation %><br>
     <%= f.password_field :password_confirmation %>
-  </div>
 
   <div class="actions"><%= f.submit %></div class=>
 <% end %>
 
 <%= link_to 'Home', controller: 'welcome' %>
-
-<p>Find me in app/views/users/new.html.erb</p>
-</div>
