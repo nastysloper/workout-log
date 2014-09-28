@@ -1,33 +1,29 @@
-<div class: "col col-3 clearfix">
+<div class="clearfix">
+<%= form_for @user do |f| %>
+<% if @user.errors.any? %>
+<div class="error messages">
+  <h2>Form is invalid</h2>
+  <ul>
+    <%= user.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
 </div>
-<% provide(:title, 'Sign up') %>
-<h1>Sign Up</h1>
-<%= form_for @user,  html: {class: "col-6"}  do |f| %>
-  <% if @user.errors.any? %>
-  <div class="error messages">
-    <h2>Form is invalid</h2>
-    <ul>
-      <%= user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
-  </div>
-  <% end %>
+<% end %>
 
-      <%= f.label :name %>
-    <%= f.text_field :name, class: "block full-width input" %>
+<%= f.label :name %>
+<%= f.text_field :name, class: "block  input" %>
 
-    <%= f.label :email %>
-    <%= f.text_field :email, class: "block full-width input" %>
+<%= f.label :email %>
+<%= f.text_field :email, class: "block input" %>
 
-    <%= f.label :password %>
-    <%= f.password_field :password, class: "block full-width input" %>
+<%= f.label :password %>
+<%= f.password_field :password, class: "block input" %>
 
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, class: "block full-width input" %>
+<%= f.label :password_confirmation %>
+<%= f.password_field :password_confirmation, class: "block input" %>
 
-  <div class="actions"><%= f.submit %></div>
-  <% end %>
+<div class="actions"><%= f.submit %></div>
+<% end %>
 </form>
-<div class: "col col-3 clearfix">
 </div>
