@@ -3,6 +3,9 @@
   <% if current_user %>
     Logged in as <%= current_user.email %>
   <%= link_to "Sign out", signout_path, method: "delete" %>
+  <% elsif current_page?(controller: "users", action: "new") %>
+    <%= link_to "Home", controller: 'welcome' %>
+    <%= link_to "Sign in", new_session_path %>
   <% else %>
     <%= link_to "Sign up", new_user_path %>
     <%= link_to "Sign in", new_session_path %>

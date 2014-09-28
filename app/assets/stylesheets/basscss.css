@@ -334,13 +334,13 @@ h6, .h6, small {
     text-align: center;
   }
 }
-.form, #new_user {
+.form {
   font-size: 1rem;
 }
 .form .field,
 .form .input,
 .form .select,
-#new_user {
+ {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 100%;
