@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   resources :workouts
   resources :sessions, only: [:new, :create, :destroy]
 
-  get 'welcome/index'
-  get 'users/new'
+  # get 'welcome/index'
+  # get 'users/new'
 
   # Sessions
   match '/signup', to: 'users#new', via: 'get'

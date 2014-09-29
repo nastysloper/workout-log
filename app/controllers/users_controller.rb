@@ -2,7 +2,9 @@ class UsersController < ApplicationController
   def show
     # this method is called when you create a new user.
     @user = User.find(params[:id])
-    render text: "hello_workouts!"
+    @workouts = @user.workouts
+    # no need to specify anything here!
+    # removed the render text
   end
 
   def new
@@ -22,6 +24,7 @@ class UsersController < ApplicationController
     # in the sessions controller, in def create of course!
     # session[:user_id] = @user_id
     # redirect_to root_url, notice: "Thank you for signing up!"
+    # this is to create a new user and sign him up.
   end
 
   private
